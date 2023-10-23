@@ -19,7 +19,7 @@ h1:hover{
   transition-timing-function: ease-in-out;
 }
 
-div{
+#box{
   background-color: rgb(245, 235, 235);
   text-align: center;
   margin: 50px 100px;
@@ -41,4 +41,16 @@ button:hover{
   columns: rgb(85, 88, 67);
   transition: 0.2s;
 
+}
+
+button.reset{
+  background-color: rgb(154, 68, 68);
+  color: rgb(244, 223, 182);
+  font-size: 25px;
+  margin-right:75px;
+}
+
+button.reset:hover{
+  background-color: rgb(222, 143, 95);
+  transition: 0.2s;
 }

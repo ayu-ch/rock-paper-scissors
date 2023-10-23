@@ -1,3 +1,10 @@
+const playerScore ={
+  wins: 0,
+  losses:0,
+  ties:0
+};
+
+
 let compChoice = '';
 
 function  playGame(playerMove){
@@ -8,42 +15,52 @@ function  playGame(playerMove){
     if (playerMove==='Paper'){
       if(compChoice === 'Paper'){
         result = 'Its a Tie!'
+        playerScore.ties+=1;
       }
       else if (compChoice==='Scissors'){
         result = 'You LOST!'
+        playerScore.losses+=1;
       }
       else if (compChoice === 'Rock'){
         result = 'You WON!'
+        playerScore.wins+=1
       }
 
-      alert(`You picked Paper. Computer picked ${compChoice}.${result}`);
+    
     }
     else if (playerMove === 'Rock'){
       if(compChoice === 'Rock'){
         result = 'Its a Tie!'
+        playerScore.ties+=1;
       }
       else if (compChoice==='Paper'){
         result = 'You LOST!'
+        playerScore.losses+=1;
       }
       else if (compChoice === 'Scissors'){
         result = 'You WON!'
+        playerScore.wins+=1;
       }
 
-      alert(`You picked Paper. Computer picked ${compChoice}.${result}`);
+      
     }
     else if (playerMove==='Scissors'){
       if(compChoice === 'Scissors'){
         result = 'Its a Tie!'
+        playerScore.ties+=1;
       }
       else if (compChoice==='Rock'){
         result = 'You LOST!'
+        compScore.wins+=1;
       }
       else if (compChoice === 'Paper'){
         result = 'You WON!'
+        playerScore.wins+=1
       }
-
-      alert(`You picked Paper. Computer picked ${compChoice}.${result}`);
     }
+      alert(`You picked ${playerMove}. Computer picked ${compChoice}.${result} 
+      Wins: ${playerScore.wins}, Losses: ${playerScore.losses}, Ties: ${playerScore.ties}`);
+    
 }
 
 function computersChoice(){
@@ -61,4 +78,6 @@ function computersChoice(){
     console.log(compChoice)
     return compChoice;
 }
+
+
 
