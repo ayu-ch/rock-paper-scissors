@@ -1,0 +1,44 @@
+body{
+  background-color: rgb(25, 38, 85);
+}
+
+h1{
+  color: rgb(243, 240, 202);
+  background-color: rgb(225, 170, 116);
+  margin:40px 320px;
+  border-radius: 15px;
+  border: rgb(243, 240, 202) solid 3px;
+  text-align: center;
+}
+
+h1:hover{
+  background-color: rgb(243, 240, 202);
+  color: rgb(56, 118, 191);
+  border: rgb(225, 170, 116) solid 3px;
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+div{
+  background-color: rgb(245, 235, 235);
+  text-align: center;
+  margin: 50px 100px;
+  padding: 100px 0px;
+  border-radius: 25px;
+  
+}
+
+button{
+  margin: 40px;
+  border-radius: 5px;
+  background-color: rgb(85, 88, 67);
+  color: rgb(245, 238, 200);
+  font-size: 45px;
+
+}
+button:hover{
+  background-color: rgb(167, 211, 151);
+  columns: rgb(85, 88, 67);
+  transition: 0.2s;
+
+}
